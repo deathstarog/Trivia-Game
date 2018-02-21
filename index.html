@@ -1,13 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <title>Nick's Guitar Trivia</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    
+
+    <div class="game">
+        <h1>Nicks Guitar Trivia</h1>
+        <button id="start-button" class="start-button">Start</button>
+        <form id="trivia-form" class="form hide">
+            <h2 id="counter"> </h2>
+            <div>
+                <p>Correct Answer =
+                    <span id="correctAnswers"></span>
+                </p>
+            </div>
+            <div class="question">
+                <label for="q1">How Many Strings are  on a 6 string guitar</label>
+                <br>
+                <input type="radio" name="q1" value="a1"> 5
+                <input type="radio" name="q1" value="a2"> 6
+                <input type="radio" name="q1" value="a3"> 7
+            </div>
+            <div class="question">
+                <label for="q2">What is the most common way to adjust volume</label>
+                <br>
+                <input type="radio" name="q2" value="b1>"> Button 
+                <input type="radio" name="q2" value="b2>"> Knob
+                <input type="radio" name="q2" value="b3>"> Slider
+            </div>
+            <div class="question">
+                <label for="q3"> How Many Strings are on an 8 string guitar</label>
+                <br>
+                <input type="radio" name="q3" value="c1>"> 7
+                <input type="radio" name="q3" value="c2>"> 8
+                <input type="radio" name="q3" value="c3>"> 9
+            </div>
+            <input id="submit" type="submit">
+        </form>
+    </div>
+
+
+
+
+    <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+    </script>
+
+    <script src="assets/javascript/app.js"></script>
+
 </body>
+
 </html>
